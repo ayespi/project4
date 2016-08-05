@@ -1,3 +1,107 @@
+### Pre-employment checklist
+
+- [] Add the deployed URL to repo settings
+- [] Add a readme with:
+  - [] An embedded screenshot of the app
+  - [] Explanations of the **technologies** used
+  - [] **Installation instructions** for any dependencies
+  - [] Link to your **user stories** – who are your users, what do they want, and why?
+  - [] Link to your **wireframes** – sketches of major views / interfaces in your application
+  - [] Descriptions of any **unsolved problems** or **major hurdles** you had to overcome
+
+
+### User Stories
+* Weigh-In
+    +Create a weigh-in {OBJECT}
+    +Add a new participant [CREATE a record]
+    +Have option to add multiple participants at once
+* Participants
+    +Conduct a weigh-in [adding participants’ weight using WEIGH-IN OBJECT]
+    +Record the weight of a program participant [CREATE new weight]
+    +Update the weight of a participant [UPDATE weight]
+    +View a list of all program participants [Participants’ INDEX]
+    +Add a new participant [CREATE new participant]
+    +Show the weigh-in history of a program participant [SHOW method]
+* Statistics
+    +Conduct computations on weigh-in data (Database Queries)
+      - View weight loss for ALL participants [Weight loss INDEX]
+      - View weight loss percentage for ALL participants [Weight loss percentage INDEX]
+          < View weekly weight loss for ALL participants
+          < View weekly weight loss percentage for ALL participants
+      - View weight loss for INDIVIDUAL participants [Weight loss SHOW]
+      - View weight loss percentage for INDIVIDUAL participants [Weight loss percentage SHOW]
+          < View weekly weight loss for INDIVIDUAL participants
+          < View weekly weight loss percentage for INDIVIDUAL participants
+
+
+
+
+
+
+### Hints and Suggestions
+
+* **Don’t get too caught up in too many awesome features** – simple is always better. Build something impressive that does one thing well.
+* **Design first.** Planning with user stories & wireframes before writing code means you won't get distracted changing your mind – you'll know what to build, and you can spend your time wisely by just building it.
+* **Don’t hesitate to write throwaway code** to solve short term problems.
+* **Read the docs for whatever technologies / frameworks / API’s you use**.
+* **Write your code DRY** and **build your APIs RESTful**.
+* **Commit early, commit often.** Don’t be afraid to break something because you can always go back in time to a previous version.
+* **Keep user stories small and well-defined**, and remember – user stories focus on what a user needs, not what development tasks need accomplishing.
+* **Write code another developer wouldn't have to ask you about**. Do your naming conventions make sense? Would another developer be able to look at your app and understand what everything is?
+* **Make it all well-formatted.** Are you indenting, consistently? Can we find the start and end of every div, curly brace, etc?
+* **Comment your code.** Will someone understand what is going on in each block or function? Even if it's obvious, explaining the what & why means someone else can pick it up and get it.
+* **Write pseudocode before you write actual code.** Thinking through the logic of something helps.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Unit #4 Project: Your Portfolio Project
 
 ### Overview
