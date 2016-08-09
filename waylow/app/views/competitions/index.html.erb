@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="container">
+    <h1>Competition Listing</h1>
+    <table class="table">
+      <tr>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Location</th>
+        <th>Team Names</th>
+        <th>About</th>
+        <th>View Info</th>
+      </tr>
+
+      <% @competitions.each do |competition| %>
+        <tr>
+          <td><%= competition.start_date %></td>
+          <td><%= competition.end_date %></td>
+          <td><%= competition.location %></td>
+          <td><%= competition.team_names %></td>
+          <td><%= competition.about %></td>
+          <td><%= link_to 'Show', competition_path(competition) %></td>
+        </tr>
+      <% end %>
+    </table>
+    <p>
+      <%= link_to "Create Competition", new_competition_path, :class => "btn btn-success btn-lg" %>
+    </p>
+
+
+
+
+  </div>
+</div>

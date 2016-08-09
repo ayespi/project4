@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Waylow</title>
+    <title>Waylow.com | Weight-Loss Competition Management System</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,33 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to "WayLow.org", root_path, :class => "navbar-brand" %>
+          <!-- <a class="navbar-brand" href="#">WayLow.org</a> -->
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!-- <li class="active"><a href="#">Home</a></li> -->
+            <!-- <%= link_to "Home", {controller: "home", action: "index"}, class: "active" %> -->
+            <li><%= link_to "Home", root_path, :class => "active" %></li>
+            <li><%= link_to "Existing Competition", competitions_path %></li>
+            <li><%= link_to "New Competition", new_competition_path %></li>
+            <!-- <li><a href="#about">Existing Competition</a></li>
+            <li><a href="#contact">New Competition</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
     <%= yield %>
+
+       <hr>
   </body>
 </html>

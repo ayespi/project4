@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="container">
+    <h1>Add New User</h1>
+    <%= form_for :user, url: users_path do |f| %>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :competition %><br>
+    <%= f.text_field :competition %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+  </div>
+</div>

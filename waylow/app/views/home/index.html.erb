@@ -1,0 +1,43 @@
+<div class="container" id="banner-home">
+
+   <div class="starter-template">
+     <h1>Are You Ready To Go... WayLow!!!</h1>
+     <p class="lead">The Weight-Loss Competition Management System.<br>
+       Designed for Program Managers who are looking to significantly reduce time compiling weigh-in results.</p>
+      <!-- <p>
+        <a class="btn btn-info btn-lg" href="#" role="button">View Existing Competition &raquo;</a>
+        <a class="btn btn-success btn-lg" href="#" role="button">Create New Competition &raquo;</a>
+      </p> -->
+<p>
+  <%= link_to "Choose Competition", competitions_path, :class => "btn btn-info btn-lg"  %>
+  <%= link_to "Create Competition", new_competition_path, :class => "btn btn-success btn-lg" %>
+</p>
+
+   </div>
+
+ </div><!-- /.container -->
+ <div class="container">
+   <!-- Example row of columns -->
+   <div class="row">
+     <div class="col-md-3"><%= image_tag 'key1-dedication.jpg',:title => 'Key #1 Dedication'  %>
+       <h2>Dedication</h2>
+       <p>Honor God With Your Body...</p>
+       <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+     </div>
+     <div class="col-md-3"><%= image_tag 'key2-inspiration.jpg',:title => 'Key #2 Inspiration'  %>
+       <h2>Inspiration</h2>
+       <p>Motivate Yourself For Change...</p>
+       <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+    </div>
+     <div class="col-md-3"><%= image_tag 'key3-eat-exercise.jpg',:title => 'Key #3 Eat/Exercise'  %>
+       <h2>Eating/Exercising</h2>
+       <p>Manage Your Habits...</p>
+       <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+     </div>
+     <div class="col-md-3"><%= image_tag 'key4-team.jpg',:title => 'Key #4 Team'  %>
+       <h2>Team</h2>
+       <p>Build A Circle Of Support...</p>
+       <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+     </div>
+   </div>
+ </div> <!-- /container -->
