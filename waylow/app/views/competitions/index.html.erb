@@ -6,7 +6,6 @@
         <th>Start Date</th>
         <th>End Date</th>
         <th>Location</th>
-        <th>Team Names</th>
         <th>About</th>
         <th>View Info</th>
       </tr>
@@ -16,18 +15,13 @@
           <td><%= competition.start_date %></td>
           <td><%= competition.end_date %></td>
           <td><%= competition.location %></td>
-          <td><%= competition.team_names %></td>
-          <td><%= competition.about %></td>
+          <td><%= competition.details %></td>
           <td><%= link_to 'Show', competition_path(competition) %></td>
         </tr>
       <% end %>
     </table>
     <p>
-      <%= link_to "Create Competition", new_competition_path, :class => "btn btn-success btn-lg" %>
+      <%= link_to "Create Competition", new_competition_path %> | <%= link_to "Return Home", root_path %>
     </p>
-
-
-
-
   </div>
 </div>

@@ -1,11 +1,22 @@
 <div class="row" id="banner-home">
-
-  <div class="starter-template">
-    <h1>Are You Ready To Go... WayLow!!!</h1>
-    <p class="lead">The Weight-Loss Competition Management System.<br>
-      Designed for Program Managers who are looking to significantly reduce time compiling weigh-in results.</p>
+  <div class="container">
+    <%= link_to "View Stages", stages_path %>
+    <div class="starter-template">
+      <h1>Are You Ready To Go... WayLow!!!</h1>
+      <p class="lead">The Weight-Loss Competition Management System.<br>
+        Designed for Program Managers who are looking to significantly reduce time compiling weigh-in results.
+      </p>
       <p>
         <%= link_to "Get Started", new_competition_path, :class => "btn btn-success btn-lg" %>
       </p>
     </div>
-  </div><!-- /.container -->
+  </div>
+</div><!-- /.container -->
+
+  <!-- <li class="active"><a href="#">Home</a></li> -->
+  <!-- <%= link_to "Home", {controller: "home", action: "index"}, class: "active" %> -->
+  <!-- <li><%= link_to "Home", root_path, :class => "active" %></li>
+  <li><%= link_to "Existing Competition", competitions_path %></li>
+  <li><%= link_to "New Competition", new_competition_path %></li> -->
+  <!-- <li><a href="#about">Existing Competition</a></li>
+  <li><a href="#contact">New Competition</a></li> -->

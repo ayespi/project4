@@ -19,8 +19,7 @@ ActiveRecord::Schema.define(version: 20160810144111) do
     t.string   "start_date"
     t.string   "end_date"
     t.string   "location"
-    t.string   "team_names"
-    t.string   "about"
+    t.text     "details"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -55,7 +54,8 @@ ActiveRecord::Schema.define(version: 20160810144111) do
   end
 
   create_table "weigh_ins", force: :cascade do |t|
-    t.decimal  "lbs"
+    t.decimal  "amount"
+    t.integer  "participant_id"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.integer  "competition_id"

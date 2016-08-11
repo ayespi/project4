@@ -1,2 +1,27 @@
-<h1>Participants#index</h1>
-<p>Find me in app/views/participants/index.html.erb</p>
+<div class="row">
+  <div class="container">
+    <h1>Registered Participants</h1>
+    <table class="table">
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>View Info</th>
+      </tr>
+
+      <% @participants.each do |participant| %>
+        <tr>
+          <td><%= participant.id %></td>
+          <td><%= participant.name_first %></td>
+          <td><%= participant.name_last %></td>
+          <td><%= participant.email %></td>
+          <td><%= participant.phone %></td>
+          <td><%= link_to 'Show', stage_participants_path(stage_participant_path) %></td>
+        </tr>
+      <% end %>
+    </table>
+    <p>
+      <%= link_to "Add New User", new_stage_participant_path, :class => "btn btn-success btn-lg" %>
+    </p>

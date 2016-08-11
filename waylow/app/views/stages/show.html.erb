@@ -1,2 +1,20 @@
-<h1>Stages#show</h1>
-<p>Find me in app/views/stages/show.html.erb</p>
+<div class="row">
+  <div class="container">
+    <h1>Stage Details</h1>
+    <p>
+      <strong>Stage ID:</strong>
+      <%= @stage.id %>
+    </p>
+    <p>
+      <strong>Stage Description:</strong>
+      <%= @stage.name %>
+    </p>
+
+    <p>
+      <strong>Alias:</strong>
+      <%= @stage.short_code %>
+    </p>
+
+    <%= link_to "View Participants", users_path, :class => "btn btn-success btn-lg" %>
+  </div>
+</div>
